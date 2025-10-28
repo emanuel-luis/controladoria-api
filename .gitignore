@@ -33,3 +33,20 @@ build/
 
 # Others
 .idea/
+
+# Document files, such as documents uploaded for processing or testing purposes
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+*.zip
+*.tar.gz
+*.egg-info/
+*.jpg
+*.png
+*.jpeg
+*.gif
+*.mp4
+*.mp3
+*.avi
+*.mkv
