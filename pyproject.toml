@@ -1,0 +1,24 @@
+[project]
+name = "controladoria-api"
+version = "0.1.0"
+description = "API para gerenciamento de documentos jurídicos."
+readme = "README.md"
+authors = [
+    { name = "Emanuel Luis", email = "emanuel.filho08@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.120.1",
+    "google-genai>=1.46.0",
+    "pydantic>=2.12.3",
+    "uvicorn>=0.38.0",
+]
+
+[tool.uv.workspace]
+members = ["apps/extract"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "ruff>=0.12.8",
+]

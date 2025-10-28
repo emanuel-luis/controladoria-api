@@ -1,0 +1,15 @@
+line-length = 144
+exclude = [".venv", "dist", "__pycache__", "dbt_packages", "logs", "target"]
+
+[lint]
+extend-select = ["I"]
+
+[lint.isort]
+combine-as-imports = true
+
+[format]
+indent-style = "space"
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+line-ending = "auto"
+quote-style = "double"
